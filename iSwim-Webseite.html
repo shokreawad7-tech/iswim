@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>iSwim Schwimmschule – Mannheim & Viernheim</title>
+<meta name="description" content="iSwim Schwimmschule (Shokre Alawad). Seit 2018. Gruppen (max. 7 Kinder ab 5 J.), Erwachsenenkurse & Einzelunterricht. 10 Einheiten × 60 Min. Seepferdchen, Bronze, Silber." />
+<style>
+:root{
+  --water:#e9f7ff; --deep:#003a6b; --teal:#00a8c6;
+  --ink:#143348; --white:#fff; --line:#e1eef6;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica Neue,Arial,sans-serif;color:var(--ink);}
+a{color:var(--teal);text-decoration:none;}a:hover{text-decoration:underline;}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.container{max-width:1100px;margin:0 auto;padding:0 16px;}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;}
+.brand h1{font-size:18px;color:var(--deep);}
+nav ul{display:flex;gap:18px;list-style:none;}
+nav a{font-weight:700;color:var(--deep);}
+.lang{display:flex;gap:8px;}
+.lang button{all:unset;cursor:pointer;padding:6px 10px;border:1px solid var(--line);border-radius:999px;}
+.active{background:#eef7ff;}
+.hero{position:relative;background:linear-gradient(180deg,var(--water),#fff);padding:60px 0 40px;border-bottom:1px solid var(--line);overflow:hidden;}
+.hero::after{content:"";position:absolute;inset:0;opacity:0.12;pointer-events:none;
+background:url('data:image/jpeg;base64,REPLACE_WITH_YOUR_LOGO_BASE64') no-repeat center/420px auto;}
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;z-index:1;position:relative;}
+.badge{display:inline-block;background:#eaf7ff;color:var(--deep);border:1px solid #d6ebf8;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800;}
+h2{font-size:34px;color:var(--deep);margin:10px 0 8px;}
+.sub{font-size:18px;color:#415e72;margin:0 0 16px;}
+.cta{display:inline-block;background:var(--teal);color:#fff;font-weight:800;padding:12px 18px;border-radius:12px;}
+section{padding:54px 0;}
+h3{font-size:26px;color:var(--deep);margin-bottom:8px;}
+.muted{color:#5b7486;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.04);}
+.pill{display:inline-block;border:1px solid #d8e9f5;background:#f0f8fe;border-radius:999px;padding:6px 10px;font-weight:700;color:var(--deep);font-size:13px;margin-bottom:8px;}
+ul.list{padding-left:18px;margin:8px 0;}
+ul.list li{margin:6px 0;}
+.gray{background:#f7fbfe;}
+form{display:grid;gap:12px;}
+input,select,textarea{border:1px solid #d5e3ec;border-radius:10px;padding:12px;font:inherit;}
+textarea{min-height:110px;}
+.btn{background:var(--deep);color:#fff;padding:12px 18px;border-radius:10px;font-weight:800;cursor:pointer;text-align:center;}
+footer{background:#f3f8fc;border-top:1px solid var(--line);padding:28px 0;margin-top:30px;}
+.hide{display:none;}
+@media(max-width:900px){.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="data:image/jpeg;base64,REPLACE_WITH_YOUR_LOGO_BASE64" alt="iSwim Logo">
+      <h1>iSwim&nbsp;Schwimmschule</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#start">Start</a></li>
+        <li><a href="#kurse">Kurse</a></li>
+        <li><a href="#infos">Infos</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="lang">
+      <button id="btn-de" class="active" onclick="setLang('de')">DE</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+<main id="start" class="hero">
+  <div class="container two">
+    <div>
+      <span class="badge de">Mannheim & Viernheim (Hessen)</span>
+      <span class="badge en hide">Mannheim & Viernheim (Hesse)</span>
+      <h2 class="de">Schwimmen lernen – sicher, strukturiert und mit Spaß</h2>
+      <h2 class="en hide">Learn to swim – safe, structured and fun</h2>
+      <p class="sub de">Geprüfter Fachangestellter für Bäderbetriebe · Kurse seit <strong>2018</strong> · Gruppen & Einzelunterricht</p>
+      <p class="sub en hide">Certified pool specialist · Courses since <strong>2018</strong> · Group & private lessons</p>
+      <a class="cta de" href="#kontakt">Jetzt Platz anfragen</a>
+      <a class="cta en hide" href="#kontakt">Request a spot</a>
+      <p class="muted de">Seepferdchen · Bronze · Silber · Kinder (ab 5 J.) & Erwachsene</p>
+      <p class="muted en hide">Seepferdchen · Bronze · Silver · Kids (5+) & Adults</p>
+    </div>
+  </div>
+</main>
+<!-- ====== Kurse & Preise ====== -->
+<section id="kurse" class="container">
+  <h3 class="de">Unsere Kurse & Preise</h3>
+  <h3 class="en hide">Courses & Prices</h3>
+
+  <div class="grid">
+    <div class="card">
+      <span class="pill de">Kinderkurse</span>
+      <span class="pill en hide">Kids' Courses</span>
+      <ul class="list de">
+        <li>Gruppen bis max. 7 Kinder (ab 5 Jahre)</li>
+        <li>Seepferdchen · Bronze · Silber</li>
+        <li>10 Einheiten à 60 Minuten</li>
+        <li>Preis: 200 €</li>
+      </ul>
+      <ul class="list en hide">
+        <li>Groups up to 7 children (5 years and older)</li>
+        <li>Seepferdchen · Bronze · Silver badges</li>
+        <li>10 lessons × 60 minutes</li>
+        <li>Price: €200</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="pill de">Erwachsenenkurse</span>
+      <span class="pill en hide">Adult Courses</span>
+      <ul class="list de">
+        <li>Schwimmen lernen für Erwachsene</li>
+        <li>Technik und Ausdauer</li>
+        <li>10 Einheiten à 60 Minuten</li>
+        <li>Preis: 250 €</li>
+      </ul>
+      <ul class="list en hide">
+        <li>Learn to swim for adults</li>
+        <li>Technique & stamina</li>
+        <li>10 lessons × 60 minutes</li>
+        <li>Price: €250</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="pill de">Einzelunterricht</span>
+      <span class="pill en hide">Private Lessons</span>
+      <ul class="list de">
+        <li>Individuelle Betreuung</li>
+        <li>1 × 60 Minuten = 50 €</li>
+      </ul>
+      <ul class="list en hide">
+        <li>Individual coaching</li>
+        <li>1 × 60 minutes = €50</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Informationen ====== -->
+<section id="infos" class="gray">
+  <div class="container">
+    <h3 class="de">Allgemeine Informationen</h3>
+    <h3 class="en hide">General Information</h3>
+
+    <div class="grid">
+      <div class="card">
+        <p class="de">
+          Seit 2018 bieten wir professionelle Schwimmkurse für Kinder und Erwachsene an. Unsere Kurse finden in kleinen Gruppen statt – maximal 7 Teilnehmer – um individuell auf jede Person eingehen zu können.
+        </p>
+        <p class="en hide">
+          Since 2018 we have been offering professional swimming courses for children and adults in small groups (max. 7 participants) for individual attention.
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="de">
+          <strong>Kurszeiten:</strong><br>
+          Mittwoch 15–18 Uhr · Freitag 16–19 Uhr · Sonntag 11–14 Uhr
+        </p>
+        <p class="en hide">
+          <strong>Course times:</strong><br>
+          Wednesday 3–6 pm · Friday 4–7 pm · Sunday 11 am–2 pm
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="de">
+          <strong>Sommerpause:</strong><br>
+          Vom 10. Mai bis Ende August finden keine Kurse statt.
+        </p>
+        <p class="en hide">
+          <strong>Summer break:</strong><br>
+          No courses from May 10 until end of August.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Kontakt ====== -->
+<section id="kontakt">
+  <div class="container">
+    <h3 class="de">Kontakt & Anmeldung</h3>
+    <h3 class="en hide">Contact & Registration</h3>
+
+    <form action="https://formspree.io/f/mnngkdlb" method="POST">
+      <input type="text" name="name" placeholder="Vor- und Nachname des Kursbesuchers" required>
+      <input type="number" name="alter" placeholder="Alter" required>
+      <input type="text" name="adresse" placeholder="Adresse" required>
+      <input type="tel" name="telefon" placeholder="Telefonnummer" required>
+      <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+      <select name="monat" required>
+        <option value="">Gewünschter Eintrittsmonat wählen</option>
+        <option>Januar</option><option>Februar</option><option>März</option>
+        <option>April</option><option>Mai</option><option>Juni</option>
+        <option>Juli</option><option>August</option><option>September</option>
+        <option>Oktober</option><option>November</option><option>Dezember</option>
+      </select>
+      <select name="kurstyp" required>
+        <option value="">Kurstyp wählen</option>
+        <option>Kinderkurs</option>
+        <option>Erwachsenenkurs</option>
+        <option>Einzelunterricht</option>
+      </select>
+      <select name="abzeichen" required>
+        <option value="">Abzeichen / Lernziel wählen</option>
+        <option>Wassergewöhnung (4–5 Jahre)</option>
+        <option>Seepferdchen</option>
+        <option>Bronze</option>
+        <option>Silber</option>
+        <option>Schwimmen lernen (für Erwachsene)</option>
+      </select>
+      <button type="submit" class="btn de">Absenden</button>
+      <button type="submit" class="btn en hide">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="de">
+      © 2025 iSwim Schwimmschule · Shokre Alawad · Viernheim (Hessen) · 
+      <a href="mailto:iswim.schwimmkurs@gmail.com">iswim.schwimmkurs@gmail.com</a> · 
+      <a href="tel:+4915207439742">+49 152 07439742</a>
+    </p>
+    <p class="en hide">
+      © 2025 iSwim Swim School · Shokre Alawad · Viernheim (Hesse) · 
+      <a href="mailto:iswim.schwimmkurs@gmail.com">iswim.schwimmkurs@gmail.com</a> · 
+      <a href="tel:+4915207439742">+49 152 07439742</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('.de').forEach(e=>e.classList.toggle('hide',lang!=='de'));
+  document.querySelectorAll('.en').forEach(e=>e.classList.toggle('hide',lang!=='en'));
+  document.getElementById('btn-de').classList.toggle('active',lang==='de');
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+}
+</script>
+</body>
+</html>
