@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>iSwim Schwimmschule – Mannheim & Viernheim</title>
+<meta name="description" content="iSwim Schwimmschule (Shokre Alawad). Seit 2018. Gruppen (max. 7 Kinder ab 5 J.), Erwachsenenkurse & Einzelunterricht. 10 Einheiten × 60 Min. Seepferdchen, Bronze, Silber." />
+<style>
+  :root{
+    --water:#e9f7ff;
+    --deep:#003a6b;
+    --teal:#00a8c6;
+    --ink:#143348;
+    --white:#ffffff;
+    --soft:#f4f9fc;
+    --line:#e1eef6;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;color:var(--ink);line-height:1.65;background:var(--white)}
+  a{color:var(--teal);text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line)}
+  .container{max-width:1100px;margin:0 auto;padding:0 16px}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+  .brand h1{font-size:18px;margin:0;color:var(--deep);letter-spacing:.2px}
+  nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+  nav a{font-weight:700;color:var(--deep)}
+  .lang{display:flex;gap:8px;align-items:center}
+  .lang button{all:unset;cursor:pointer;padding:6px 10px;border:1px solid var(--line);border-radius:999px}
+  .active{background:#eef7ff;border-color:#d4e9ff}
+  .hero{position:relative;background:linear-gradient(180deg, var(--water) 0%, #f6fbff 50%, #ffffff 100%);padding:56px 0 40px;border-bottom:1px solid var(--line);overflow:hidden;}
+  .hero::after{content:"";position:absolute;inset:0;opacity:0.12;pointer-events:none;
+    background: url('data:image/jpeg;base64,REPLACE_WITH_YOUR_LOGO_BASE64') no-repeat center/420px auto;
+  }
+  .two{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;position:relative;z-index:1}
+  .badge{display:inline-block;background:#eaf7ff;color:var(--deep);border:1px solid #d6ebf8;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}
+  h2{font-size:36px;line-height:1.15;margin:10px 0 8px;color:var(--deep)}
+  .sub{font-size:18px;margin:0 0 16px;color:#415e72}
+  .cta{display:inline-block;background:var(--teal);color:white;font-weight:800;padding:12px 18px;border-radius:12px}
+  section{padding:54px 0}
+  h3{font-size:26px;margin:0 0 8px;color:var(--deep)}
+  .muted{color:#5b7486}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.04)}
+  .pill{display:inline-block;border:1px solid #d8e9f5;background:#f0f8fe;border-radius:999px;padding:6px 10px;font-weight:700;color:var(--deep);font-size:13px;margin-bottom:8px}
+  ul.list{padding-left:18px;margin:8px 0}
+  ul.list li{margin:6px 0}
+  .info{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .gray{background:#f7fbfe}
+  .map{background:#eef6ff;border:1px dashed #cfe2ff;border-radius:12px;padding:18px;text-align:center;color:#4f6a86}
+  form{display:grid;gap:12px}
+  input,select,textarea{border:1px solid #d5e3ec;border-radius:10px;padding:12px;font:inherit}
+  textarea{min-height:110px}
+  button{all:unset}
+  .btn{display:inline-block;background:var(--deep);color:white;padding:12px 18px;border-radius:10px;font-weight:800;cursor:pointer;text-align:center}
+  .stack{display:flex;flex-direction:column;gap:10px}
+  footer{background:#f3f8fc;border-top:1px solid var(--line);padding:28px 0;margin-top:30px}
+  .qr{height:170px;border:1px dashed #bfdaef;border-radius:12px;display:grid;place-items:center;color:#4f6a86;background:#eef6ff}
+  .hide{display:none}
+  @media (max-width:900px){.two{grid-template-columns:1fr}.grid,.info{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
